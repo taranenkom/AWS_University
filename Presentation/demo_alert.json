@@ -1,0 +1,62 @@
+{
+    "_index": ".internal.alerts-security.alerts-default-000006",
+    "_id": "41150faf3c4114181fe75c4a7154eaba01c55af8",
+    "_source": {
+        "kibana.alert.severity": "critical",
+        "kibana.alert.start": "2025-05-09T07:46:49.232Z",
+        "message": "Malicious Behavior Detection Alert: Manual Loading of a Suspicious Chromium Extension",
+        "kibana.alert.rule": {
+            "name": "Manual Loading of a Suspicious Chromium Extension",
+            "description": "Detects the manual loading of a Chromium extension. This activity is suspicious and could indicate a threat actor persisting or harvesting browsing secrets.",
+            "severity": "critical",
+            "version": 1
+        },
+        "user": {
+            "name": "ScoobyDoo",
+            "id": 502
+        },
+        "host": {
+            "name": "TomAndJerry",
+            "hostname": "TomAndJerry",
+            "id": "ABCDEF12-3456-7890-ABCD-EF1234567890",
+            "ip": [
+                "127.0.0.1",
+                "::1",
+                "192.168.0.10"
+            ],
+            "os": {
+                "name": "macOS",
+                "version": "14.5",
+                "kernel": "Darwin Kernel Version 23.5.0"
+            },
+            "architecture": "arm64"
+        },
+        "event": {
+            "id": "O/Y+KEioqZG+g7wI++++vIsN",
+            "created": "2025-05-09T07:44:05.592314Z",
+            "kind": "event",
+            "action": "exec",
+            "category": [
+                "process"
+            ],
+            "type": [
+                "start"
+            ],
+            "outcome": "unknown"
+        },
+        "process": {
+            "name": "Google Chrome",
+            "pid": 19888,
+            "parent": {
+                "name": "chromedriver",
+                "pid": 19883
+            },
+            "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "command_line": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-search-engine-choice-screen --disable-sync --enable-logging --ignore-certificate-errors --load-extension=/var/folders/.../extension --log-level=0 --no-first-run --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --unsafely-disable-devtools-self-xss-warnings --use-mock-keychain --user-data-dir=/var/folders/... --window-size=390,844 data:,",
+            "hash": {
+                "sha256": "51569b54fa3d83657a45b438bb0dbf7ceb3c16a911d20fe0f14870441fe3a946"
+            }
+        },
+        "kibana.alert.url": "https://cartoon-siem.local/app/security/alerts/redirect/afsdfasfqr423432?index=.alerts-security.alerts-default&timestamp=2025-05-09T07:46:49.202Z"
+    }
+}
